@@ -1,0 +1,92 @@
+<!--<ibm-header name="Carbon Tutorial Angular">
+    <ibm-header-navigation ariaLabel="Carbon Tutorial Angular">
+      <a [href]="'/mf-docs'">Repositories</a>
+    </ibm-header-navigation>
+    <ibm-header-global>
+      <ibm-header-action title="action">
+        <svg ibmIcon="notification" size="20"></svg>
+      </ibm-header-action>
+      <ibm-header-action title="action">
+        <svg ibmIcon="user--avatar" size="20"></svg>
+      </ibm-header-action>
+      <ibm-header-action title="action">
+        <svg ibmIcon="app-switcher" size="20"></svg>
+      </ibm-header-action>
+    </ibm-header-global>
+  </ibm-header>-->
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menú Lateral y Encabezado</title>
+
+    <!-- Paso 1: Agrega los estilos de Carbon -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/carbon-components/css/carbon-components.min.css"
+    />
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      header {
+        background-color: #333;
+        color: white;
+        padding: 15px;
+        text-align: center;
+      }
+
+      nav {
+        width: 250px;
+        height: 100%;
+        background-color: #f1f1f1;
+        position: fixed;
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
+        padding-top: 60px;
+      }
+
+      nav a {
+        padding: 15px;
+        text-decoration: none;
+        font-size: 18px;
+        color: #333;
+        display: block;
+      }
+
+      nav a:hover {
+        background-color: #ddd;
+      }
+
+      .content {
+        margin-left: 250px;
+        padding: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Paso 2: Utiliza las clases de Carbon -->
+    <header>
+      <h1 class="bx--type-expressive-heading-04">Demo-devex</h1>
+    </header>
+
+    <nav class="bx--side-nav">
+      <a href="#" class="bx--side-nav__link">Inicio</a>
+      <a [href]="'/mf-docs'">Docs</a>
+      <a href="#" class="bx--side-nav__link">Logs</a>
+      <a href="#" class="bx--side-nav__link">Contacto</a>
+    </nav>
+
+    <!-- Tu contenido principal -->
+
+    <!-- Paso 1: Agrega los scripts de Carbon -->
+    <script src="https://unpkg.com/carbon-components/scripts/carbon-components.min.js"></script>
+  </body>
+</html>
