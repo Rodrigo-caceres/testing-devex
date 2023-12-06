@@ -9,7 +9,5 @@ describe('HeaderComponent', () => {
 
   beforeEach(async () => {});
 
-  it('should create', () => {
-   
-  });
+  it('should create', () => {});
 });

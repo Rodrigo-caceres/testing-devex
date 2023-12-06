@@ -8,7 +8,5 @@ describe('SidebarComponent', () => {
 
   beforeEach(async () => {});
 
-  it('should create', () => {
-    
-  });
+  it('should create', () => {});
 });
