@@ -1,39 +1,16 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SidebarComponent } from './sidebar/sidebar.component';
-import {
-  ButtonModule,
-  GridModule,
-  IconModule,
-  IconService,
-  ListModule,
-  RadioModule,
-  TabsModule,
-  TilesModule,
-  UIShellModule,
-} from 'carbon-components-angular';
 import { HeaderComponent } from './header/header.component';
 
-import { I18n } from 'carbon-components-angular/i18n';
+// carbon-components-angular default imports
+import { UIShellModule, IconModule } from 'carbon-components-angular';
 
 @NgModule({
-  declarations: [AppComponent, SidebarComponent, HeaderComponent],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    GridModule,
-    ListModule,
-    TabsModule,
-    TilesModule,
-    RadioModule,
-    ButtonModule,
-    IconModule,
-    UIShellModule,
-  ],
-  providers: [],
+  declarations: [AppComponent, HeaderComponent],
+  imports: [BrowserModule, AppRoutingModule, UIShellModule, IconModule],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

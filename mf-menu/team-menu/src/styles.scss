@@ -1,9 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import "~carbon-components/css/carbon-components.css";
-
-@import "@carbon/layout";
-@import "@carbon/type";
+@import "carbon-components/scss/globals/scss/styles";
 
 /* app.component.css */
 /*.app-container {
@@ -54,7 +51,7 @@
   
   .menu.show {
     width: 200px;
-  }*/
+  }
 
 .starter-home {
   .title {
@@ -117,3 +114,4 @@
     font-size: 1.25rem;
   }
 }
+*/

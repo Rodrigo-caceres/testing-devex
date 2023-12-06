@@ -1,6 +1,7 @@
 import { Component, HostBinding } from '@angular/core';
 import { I18n, IconService } from 'carbon-components-angular';
 import { IconModule } from 'carbon-components-angular';
+import { Notification } from 'carbon-components-angular';
 
 @Component({
   selector: 'app-header',
@@ -9,9 +10,10 @@ import { IconModule } from 'carbon-components-angular';
 })
 export class HeaderComponent {
   @HostBinding('class.cds--header') headerClass = true;
+
   constructor(protected iconService: IconService) {}
 
   ngOnInit() {
-    this.iconService.registerAll([I18n]);
+    this.iconService.registerAll([Notification]);
   }
 }

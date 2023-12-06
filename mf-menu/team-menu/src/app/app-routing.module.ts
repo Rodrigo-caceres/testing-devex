@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from '../../../../mf-docs/team-docs/src/app/app.component';
 import { EmptyRouteComponent } from './empty-route/empty-route.component';
+import { IconModule } from 'carbon-components-angular';
+import { HeaderComponent } from './header/header.component';
 
 const routes: Routes = [
   {
@@ -16,7 +18,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes), IconModule],
   exports: [RouterModule],
   providers: [{ provide: APP_BASE_HREF, useValue: '/' }],
 })
